@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.mycontainer {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+
+}
+
+
+.my-row1 {
+    background-color: black;
+    width: 25%;
+    /* z-index: -1; */
+
+}
+
+.my-row2 {
+    background-color: rgb(26, 25, 25);
+    width: 75%;
+    z-index: -1;
+
+}
+
+.my-row1 img {
+    width: 100%;
+
+    margin-top: 20%;
+    margin-left: 30%;
+
+}
+
+.my-row2 .content {
+    color: white;
+    /* border: 2px solid red; */
+    padding-top: 12%;
+    padding-left: 12%;
+
+}
+
+.my-row2 h1 {
+    /* border: 2px solid yellow; */
+    width: 42%;
+
+
+
+}
+
+.my-row2 p {
+    /* border: 2px solid yellow; */
+
+    width: 70%;
+}
+
+
+.box2 {
+    background-color: black;
+    color: white;
+}
+
+.box2-content {
+    /* border: 2px solid yellow; */
+
+    padding-left: 7%;
+
+}
+
+.para {
+    padding-top: 2%;
+}

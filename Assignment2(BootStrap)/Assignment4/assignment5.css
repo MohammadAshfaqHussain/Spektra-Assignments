@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .my-container h3 p {
+    text-align: center;
+    border: 2px solid black;
+} */
+
+.my-container {
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 5%;
+}
+
+.container .row {
+    text-align: center;
+    margin: 3% auto;
+    width: 30%;
+    /* border: 2px solid black; */
+}
+
+
+.container1 {
+    display: flex;
+    flex: row;
+}
+
+.box1 .box2 .box3 {
+    display: flex;
+
+}
+
+.col-md-4 {
+
+    text-align: center;
+    margin: 2% auto;
+}
+
+.col-md-4 p {
+    padding-top: 2%;
+}

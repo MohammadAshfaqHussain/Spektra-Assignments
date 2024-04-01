@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    /* border: 2px solid black; */
+    padding: 5% 0 0 10%;
+}
+
+.container-fluid p {
+    padding-top: 1%;
+}
+
+.my-button {
+    border: 1px solid black;
+    border-radius: 50px;
+}
