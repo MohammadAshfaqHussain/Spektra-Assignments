@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Assignment2.css">
+</head>
+
+<body>
+
+    <fieldset>
+        <legend><strong>Registration Form</strong></legend>
+        <div class="container">
+
+            <!-- <h2>Registration Form</h2> -->
+
+
+            <div class="box">
+                <label>
+                    <input type="text" id="firstName" placeholder="First Name">
+                    <input type="text" id="lastName" placeholder="Last Name">
+                </label>
+                <label>
+                    <input type="email" id="email" placeholder="Email">
+                </label>
+                <label>
+                    <input type="password" id="password" placeholder="Password">
+                </label>
+                <label>
+                    <input type="radio" id="male" name="gender">Male
+                    <input type="radio" id="female" name="gender">Female
+                </label>
+                <label for="country">
+                    <select id="country">
+                        <option value="">Select a Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="New Zealand">New Zealand</option>
+                    </select>
+                </label>
+
+                <label for="button">
+                    <button id="submitBtn">Submit</button>
+                </label>
+            </div>
+    </fieldset>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+
+            var firstName = document.getElementById('firstName').value.trim();
+            var lastName = document.getElementById('lastName').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value.trim();
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var country = document.getElementById('country').value.trim();
+
+
+            if (firstName === '' || lastName === '' || email === '' || password === '' || !gender || country === '') {
+                alert('Please fill out all fields.');
+            } else {
+
+                window.location.href = 'index2.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

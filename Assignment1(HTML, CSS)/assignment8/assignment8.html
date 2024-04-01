@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1>Survey Form: Customer Feedback</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Product Experience:</legend>
+            <p>How satisfied are you with our product/service?</p>
+            <input type="radio" id="verySatisfied" name="satisfaction" value="Very Satisfied">
+            <label for="verySatisfied">Very Satisfied</label><br>
+            <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
+            <label for="satisfied">Satisfied</label><br>
+            <input type="radio" id="neutral" name="satisfaction" value="Neutral">
+            <label for="neutral">Neutral</label><br>
+            <input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied">
+            <label for="dissatisfied">Dissatisfied</label><br>
+            <input type="radio" id="veryDissatisfied" name="satisfaction" value="Very Dissatisfied">
+            <label for="veryDissatisfied">Very Dissatisfied</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reasons for Satisfaction/Dissatisfaction:</legend>
+            <textarea id="reasons" name="reasons" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Likelihood to Recommend:</legend>
+            <p>How likely are you to recommend our product/service to others?</p>
+            <input type="radio" id="veryLikely" name="recommendation" value="Very Likely">
+            <label for="veryLikely">Very Likely</label><br>
+            <input type="radio" id="likely" name="recommendation" value="Likely">
+            <label for="likely">Likely</label><br>
+            <input type="radio" id="neutralRec" name="recommendation" value="Neutral">
+            <label for="neutralRec">Neutral</label><br>
+            <input type="radio" id="unlikely" name="recommendation" value="Unlikely">
+            <label for="unlikely">Unlikely</label><br>
+            <input type="radio" id="veryUnlikely" name="recommendation" value="Very Unlikely">
+            <label for="veryUnlikely">Very Unlikely</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Improvement Suggestions:</legend>
+            <textarea id="improvement" name="improvement" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Method of Contact:</legend>
+            <input type="checkbox" id="emailContact" name="contactMethod" value="Email">
+            <label for="emailContact">Email</label><br>
+            <input type="checkbox" id="phoneContact" name="contactMethod" value="Phone">
+            <label for="phoneContact">Phone</label><br>
+            <input type="checkbox" id="noPreference" name="contactMethod" value="No Preference">
+            <label for="noPreference">No Preference</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Demographic Information (Optional):</legend>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation"><br><br>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Comments:</legend>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Date of Submission:</legend>
+            <label for="submissionDate">Date:</label>
+            <input type="date" id="submissionDate" name="submissionDate" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

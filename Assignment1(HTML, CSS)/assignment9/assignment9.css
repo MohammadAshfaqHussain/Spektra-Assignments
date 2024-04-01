@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /* border: 2px solid black; */
+    /* width: 80%;
+    max-width: 800px; */
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+.navbar a {
+    padding: 2%;
+    color: black;
+}
+
+.home-page img {
+    width: 20%;
+    padding: 2%;
+    text-align: center;
+    margin-top: 12%;
+    margin-left: 6%;
+    /* border: 1px solid black; */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+
+.home-page {}
