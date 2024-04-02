@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Program</title>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <form>
+        <label>
+            1st Number :
+        </label>
+        <input type="number" id="firstNum">
+        <br><br>
+        <label>
+            2nd Number :
+        </label>
+        <input type="number" id="secondNum">
+        <br>
+        <br>
+
+        <button type="button" onclick="mult()">Multiply</button>
+        <button type="button" onclick="divi()">Divide</button>
+    </form>
+
+    <div id="result">
+
+    </div>
+
+    <script>
+        function mult() {
+            let a = document.getElementById("firstNum").value;
+            let b = document.getElementById("secondNum").value;
+
+            let ans = a * b;
+
+            alert(ans);
+        }
+
+        function divi() {
+            let a = document.getElementById("firstNum").value;
+            let b = document.getElementById("secondNum").value;
+
+            let ans = a / b;
+
+            alert(ans);
+        }
+    </script>
+</body>
+
+</html>

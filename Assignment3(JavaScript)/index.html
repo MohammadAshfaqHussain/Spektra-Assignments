@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <h2>Simple Calculator</h2>
+    <form id="calculatorForm">
+        <label for="num1">Enter the first number:</label>
+        <input type="number" id="num1" required>
+        <br>
+        <label for="operator">Select an operator:</label>
+        <select id="operator">
+            <option value="+">Addition (+)</option>
+            <option value="-">Subtraction (-)</option>
+            <option value="*">Multiplication (*)</option>
+            <option value="/">Division (/)</option>
+        </select>
+        <br>
+        <label for="num2">Enter the second number:</label>
+        <input type="number" id="num2" required>
+        <br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            // Get input values from the form
+            const num1 = document.getElementById("num1").value;
+            const operator = document.getElementById("operator").value;
+            const num2 = document.getElementById("num2").value;
+
+            // Perform calculation based on the operator
+            let result;
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if (num2 !== 0) {
+                        result = num1 / num2;
+                    } else {
+                        result = "Cannot divide by zero";
+                    }
+                    break;
+                default:
+                    result = "Invalid operator";
+            }
+
+            // Display the result
+            document.getElementById("result").innerHTML = `Result: ${result}`;
+        }
+    </script>
+</body>
+
+</html>
